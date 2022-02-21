@@ -99,7 +99,7 @@ img {
   width: 100%;
   height: 300px;
   background-color: #000;
-  background-image: url(../rodeo-drive.jpg);
+  background-image: url('https://annalovecode.github.io/hw1/rodeo-drive.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
