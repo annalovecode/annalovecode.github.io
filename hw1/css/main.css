@@ -207,10 +207,11 @@ img {
   float: right;
   margin-left: 10px;
   margin-right:90px;
-  width:250%;
+  width:400px;
   height:210px;
   border-radius: 1px;
 }
+
 #section4 {
   justify-content: left;
   /*align-items: center;*/
