@@ -1,7 +1,7 @@
 
   // fetch() is an alternate/better/newer way to fetch data
   // also try 'national-parks' :)
-  let DATA = './data.json';
+  let DATA = './hw1/data.json';
   //DATA='https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits';
 
   async function fetchData() {
