@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html{
+    font-family: sans-serif;
+    background: #eee;
+    color:#800000;
+}
+
+body {
+    width: 1024px;
+    /*background-color: lightgrey;*/
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.hide {
+    display: none !important;
+}
+
+#content {
+    margin-top: 30px;
+    width: 1000px;
+    text-align: center;
+    flex-direction: column;
+}
+
+#search {
+    height: 500px;
+    background-color: white;
+    background-image: url(赵梦.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*display: flex;*/
+
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#search-header1 {
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#search-header2 {
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+#search-banner {
+    font-size: 1em;
+    height: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+}
+#search-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#search-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: flex-start; */
+    margin-left:20px;
+}
+
+#search-field-label {
+    font-size: 1.2em;
+}
+
+#search-field-input1 {
+    margin-left: 40px;
+
+}
+#search-field-input2 {
+    margin-left: 15px;
+
+}
+label{
+    color:black;
+}
+input {
+    margin-left:5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+
+}
+
+/*#search-field-input1 > input {*/
+/*    padding-left: 4px;*/
+/*    font-size: 1em;*/
+/*    padding-top: 4px;*/
+/*    padding-bottom: 4px;*/
+/*}*/
+
+#search-buttons {
+    margin-top: 50px;
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-buttons input {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px 30px;
+     display: inherit;
+    font-size: 1em;
+    background-color: dodgerblue;
+    cursor: default;
+    border-radius: 5px;
+    color:white;
+}
+
+#search-buttons input:hover {
+    background-color: #c0c0c0;
+}
+#search-button1{
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-field-input > input:focus, #search-buttons input:focus {
+    outline-color: black;
+}
+
+@supports (-moz-appearance:none) {
+    #search-field-input > input:focus {
+        outline: 2px solid black;
+        -moz-outline-radius: 5px;
+    }
+
+    #search-field-input > input:invalid {
+        box-shadow: none;
+    }
+}

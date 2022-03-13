@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Pressure Predictor</title>
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="search">
+            <div id="search-banner">
+                <div id="search-header1">
+                Blood Pressure Predictor
+                </div>
+                 <div id="search-header2">
+                Fill out the form to get your Blood Pressure estimate!
+            </div>
+            </div>
+            <form id="search-form" action={{ url_for('result') }} method="post">
+                <div id="search-field">
+                    <div id="search-field-label">
+                        <label for="blood-pressure-predictor">Age<span
+                                style="color: red;padding-left: 5px">*</span></label>
+                    </div>
+                    <div id="search-field-input1">
+                        <input type="number" name="age" min="1"
+        max="130" placeholder="Enter age in years" required>
+                    </div>
+                </div>
+                <div id="search-field">
+                    <div id="search-field-label">
+                        <label for="blood-pressure-predictor">Weight<span
+                                style="color: red;padding-left: 5px">*</span></label>
+                    </div>
+                    <div id="search-field-input2">
+                        <input type="number"min="1"
+        max="999" name="weight" placeholder="Enter weight in kg" required>
+                    </div>
+                </div>
+                <div id="search-buttons">
+                    <div id="search-button">
+                        <input type="submit" value="Calculate">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
